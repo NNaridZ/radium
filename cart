@@ -13,6 +13,7 @@ ReplicatedStorage.Events.ClaimCart:InvokeServer((function()
 		if Data.Category == "LevelAchievements" then
 			for i,v in pairs(Frame:GetChildren()) do
 				if v:IsA("Frame") and v.Visible and v.CartName.Text == Data.UIName then
+					Int += 1;
 					return
 				end
 			end
@@ -73,7 +74,7 @@ ReplicatedStorage.Events.ClaimCart:InvokeServer((function()
 				until Player.PlayerGui.ScreenGui.MenuButton.ShopButton.Notification.Visible == true;
 
 				task.wait(2);
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/NNaridZ/radium/main/cart"))();
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/Rylvns/EnvisionExploits/master/game-scripts/Create%20a%20Cart%20Ride!/source2.lua"))();
 				]]);
 				return Index;
 			end;
