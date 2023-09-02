@@ -13,6 +13,7 @@ ReplicatedStorage.Events.ClaimCart:InvokeServer((function()
 		if Data.Category == "LevelAchievements" then
 			for i,v in pairs(Frame:GetChildren()) do
 				if v:IsA("Frame") and v.Visible and v.CartName.Text == Data.UIName then
+					print("NEXT")
 					Int += 1;
 					return
 				end
